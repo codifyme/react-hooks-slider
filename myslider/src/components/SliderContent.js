@@ -9,6 +9,4 @@ const SliderContent = styled.div`
   display: flex;
   background:red;
 `
-
-
 export default SliderContent
