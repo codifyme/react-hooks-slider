@@ -2,11 +2,12 @@
 import React, { useState } from 'react'// eslint-disable-line no-unused-vars
 import { css, jsx } from '@emotion/core'
 import SliderContent from './SliderContent'
+import Slide from './Slide'
 
 /**
  * @function Slider
  */
-const Slider = () => {
+const Slider = (props) => {
   const getWidth = () => window.innerWidth
 
   const [state, setState] = useState({
@@ -15,15 +16,19 @@ const Slider = () => {
   })
 
   const { translate, transition } = state
+  
 
   return (
     <div css={SliderCSS}>
       <SliderContent
         translate={translate}
         transition={transition}
-        width={getWidth()}
+        width={getWidth()*props.slides.lenght}
       >
-        {/* */}
+        {
+            props.slides.map(slide=>(
+                <Slide key={slide} content={slide} />)
+            )}
       </SliderContent>
     </div>
   )
