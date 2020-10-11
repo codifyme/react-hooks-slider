@@ -22,7 +22,7 @@ const Slider = (props) => {
       <SliderContent
         translate={translate}
         transition={transition}
-        width={getWidth()}
+        width={getWidth()*props.slides.length}
       >
         {
             props.slides.map(slide=>(
