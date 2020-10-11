@@ -10,13 +10,12 @@ import Slide from './Slide'
 const Slider = (props) => {
   const getWidth = () => window.innerWidth
 
-  const [state, setState] = useState({
+  const [state, setState] = useState({// eslint-disable-line no-unused-vars
     translate: 0,
     transition: 0.45
   })
 
   const { translate, transition } = state
-  
 
   return (
     <div css={SliderCSS}>
@@ -27,7 +26,7 @@ const Slider = (props) => {
       >
         {
             props.slides.map(slide=>(
-                <Slide key={slide} content={slide} />)
+                <Slide key={Slide} content={Slide} />)
             )}
       </SliderContent>
     </div>

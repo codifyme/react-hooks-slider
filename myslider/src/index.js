@@ -6,7 +6,7 @@ import Slider from './components/Slider';
 //import App from './App';
 //import * as serviceWorker from './serviceWorker';
 const images = [
-  'https://unsplash.com/photos/W2emkSjc6EE',
+  'https://unsplash.com/photos/RnCPiXixooY',
   'https://unsplash.com/photos/doGGZWPdmQA',
   'https://pixabay.com/images/id-2384/',
   'https://pixabay.com/images/id-1655783/'
