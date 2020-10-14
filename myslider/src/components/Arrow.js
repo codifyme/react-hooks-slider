@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import React from 'react'// eslint-disable-line no-unused-vars
 import { css, jsx } from '@emotion/core'
-import leftArrow from '../img/left-arrow.svg'
-import rightArrow from '../img/right-arrow.svg'
+import leftArrow from '../img/left-arrow1.svg'
+import rightArrow from '../img/right-arrow1.svg'
 
 const Arrow = ({ direction, handleClick }) => (
   <div
@@ -12,8 +12,8 @@ const Arrow = ({ direction, handleClick }) => (
       position: absolute;
       top: 50%;
       ${direction === 'right' ? `right: 25px` : `left: 25px`};
-      height: 10px;
-      width: 10px;
+      height: 40px;
+      width: 40px;
       justify-content: center;
       background: white;
       border-radius: 50%;
