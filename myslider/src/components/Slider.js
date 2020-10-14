@@ -3,6 +3,7 @@ import React, { useState } from 'react'// eslint-disable-line no-unused-vars
 import { css, jsx } from '@emotion/core'
 import SliderContent from './SliderContent'
 import Slide from './Slide'
+import Arrow from './Arrow'
 
 /**
  * @function Slider
@@ -29,6 +30,8 @@ const Slider = (props) => {
                 <Slide key={slide} content={slide} />)
             )}
       </SliderContent>
+      <Arrow direction="left"/>
+      <Arrow direction="right"/>
     </div>
   )
 }
